@@ -57,13 +57,7 @@ footer {
   clear: both;
   padding-top: 50px;
 }
-/*interest{
-  float: left;
-  font-family: 'Changa One', sans-serif;
-  font-size: 1em;
-  margin: -5px 0 0;
-  font-weight: normal;
-}*/
+
 
 social-icon{
   width: 30px;
@@ -94,13 +88,13 @@ social-icon{
 
 @media only screen and (min-width: 480px) {
 
-  /*.nav {
+  .nav {
     float: left;
     width: 30%;
     margin: 0 0 0 5%;
     padding: 25px 1%;
     margin-bottom: 0;
-  }*/
+  }
 
   .nav li:first-child a {
     margin-left: 0;
@@ -112,37 +106,38 @@ social-icon{
 
 }
 
-@media only screen and (min-width: 1024px)
-       /*only screen and (min-width: 700px) and (orientation: landscape)*/ {
+@media only screen and (min-width: 780px)
+       only screen and (min-width: 700px) and (orientation: landscape) {
 
   #gallery{
     flex-direction: row;
     /*flex-wrap: wrap;*/
-
        }
+  .li {
+    padding: 10px;
+  }
   .title {
     float: left;
     font-size: 1.4em;
   }
 
   .nav {
-    float: right;
-    width: 60%;
+    float: left;
+    width: auto;
   }
 
   .nav {
     padding: 15px 1%;
   }
+  #gallery{
+    flex-direction: column;
+    flex: 50%;
+    max-width: 50%;
+  }
+  #gallery li{
+    padding-right: 10px;
 
-  /*.main article {
-    float: left;
-    width: 57%;
-  }*/
-
-  /* .main aside {
-    float: right;
-    width: 38%;
-  }*/
+  }
 
 }
 
@@ -159,6 +154,13 @@ social-icon{
 
   .nav{
     padding: 25px 1%;
+    float: left;
+  }
+  #gallery{
+    flex-direction: row;
+  }
+  #gallery li{
+    padding-right: 10px;
   }
 
 }
