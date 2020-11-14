@@ -4,13 +4,12 @@
 	<title>Selectors</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/basic main.css">
-	<link rel="html" href="CL-Project-2020/basic index.html">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/selectors.css">
 </head>
 <body>
 	<div id="container">
-		<form class="form-contact">
+		<form class="form-contact" onsubmit="event.preventDefault(); validateForm()" >
 	  	<h1>Contact</h1>
 
 		  <label for="name">Name:</label>
@@ -45,5 +44,6 @@
 		<a href="http://facebook.com/dturner57"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon"></a>
 		<p>&copy; 2020 David Turner.</p>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 </html>
