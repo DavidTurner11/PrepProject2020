@@ -78,11 +78,6 @@ social-icon{
   flex-direction: column;
   width: 100%;
 }
-/*#gallery li {
-  float: left;
-  width: 22%;
-  margin: 1.5%;
-}*/
 
 /* media Queries*/
 
@@ -189,22 +184,6 @@ Clearfix
 .clearfix {
   *zoom: 1;
 }
-/**************
-@media screen and (min-width: 480px) {
-
-  **********************************
-  TWO COLUMN LAYOUT
-  ***********************************
-
-  #primary {
-    width: 50%;
-    float: left;
-  }
-
-  #secondary {
-    width: 40%;
-    float: right;
-  }********************/
 
   *, *:before, *:after {
     -moz-box-sizing: border-box;
