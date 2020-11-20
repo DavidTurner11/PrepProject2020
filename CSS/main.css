@@ -92,28 +92,27 @@ social-icon{
 
 /* media Queries*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 700px) {
 
   .nav {
     padding: 25px 1%;
     margin-bottom: 0;
   }
-.navul {
-  flex-direction: row;
-}
+  .navul {
+    flex-direction: row;
+  }
 
 /*#gallery{
   flex-direction: column;
   flex: 50%;
   max-width: 50%;
-}*/
+}
 
-@media only screen and (min-width: 780px)
-       only screen and (min-width: 700px) and (orientation: landscape) {
+/*@media only screen and (min-width: 780px){
 
   #gallery{
     flex-direction: row;
-    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap;*
        }
   .li {
     padding: 10px;
@@ -131,6 +130,7 @@ social-icon{
   .nav {
     padding: 15px 1%;
   }
+
   #gallery{
     flex-direction: column;
     flex: 50%;
@@ -141,7 +141,7 @@ social-icon{
 
   }
 
-}
+}*/
 
 @media only screen and (min-width: 1140px) {
 
