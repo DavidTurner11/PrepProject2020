@@ -40,8 +40,6 @@ h2 {
 }
 
 nav {
-  float: left;
-  text-align: left;
   margin-right: 0;
   width: auto;
   list-style: none;
@@ -49,6 +47,12 @@ nav {
 nav li {
   display: inline;
   padding: 10px;
+}
+.navul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-inline-start: 0;
 }
 footer {
   font-family: 'Changa One', sans-serif;
@@ -78,29 +82,26 @@ social-icon{
   flex-direction: column;
   width: 100%;
 }
+#gallery li:nth-child(odd) img {
+  border: 5px solid red;
+}
+
+#gallery li:nth-child(even) img {
+  border: 5px solid blue;
+}
 
 /* media Queries*/
 
 @media only screen and (min-width: 480px) {
 
   .nav {
-    float: left;
-    width: 30%;
-    margin: 0 0 0 5%;
     padding: 25px 1%;
     margin-bottom: 0;
   }
-
-  .nav li:first-child a {
-    margin-left: 0;
-  }
-
-  .nav li:last-child a {
-    margin-right: 0;
-  }
-
+.navul {
+  flex-direction: row;
 }
-}
+
 /*#gallery{
   flex-direction: column;
   flex: 50%;
